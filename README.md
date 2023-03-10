@@ -1,7 +1,7 @@
-# Raydium SDK
+# Muto SDK
 
-[npm-image]: https://img.shields.io/npm/v/@raydium-io/raydium-sdk.svg?style=flat
-[npm-url]: https://www.npmjs.com/package/@raydium-io/raydium-sdk
+[npm-image]: https://img.shields.io/npm/v/@saad3074/muto-sdk.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/@saad3074/muto-sdk
 
 [![npm][npm-image]][npm-url]
 
@@ -12,13 +12,13 @@ An SDK for building applications on top of Raydium.
 ### Yarn
 
 ```bash
-$ yarn add @raydium-io/raydium-sdk
+$ yarn add @saad3074/muto-sdk
 ```
 
 ### npm
 
 ```bash
-$ npm install @raydium-io/raydium-sdk --save
+$ npm install @saad3074/muto-sdk --save
 ```
 
 ## Hosting JSON files
@@ -47,7 +47,7 @@ import {
   TokenAccount,
   SPL_ACCOUNT_LAYOUT,
   LIQUIDITY_STATE_LAYOUT_V4,
-} from "@raydium-io/raydium-sdk";
+} from "@saad3074/muto-sdk";
 import { OpenOrders } from "@project-serum/serum";
 import BN from "bn.js";
 
@@ -154,7 +154,7 @@ parsePoolInfo();
 
 ```typescript
 import { Connection, PublicKey } from "@solana/web3.js";
-import { Farm } from "@raydium-io/raydium-sdk";
+import { Farm } from "@saad3074/muto-sdk";
 import {
   JsonPairItemInfo,
   FarmPoolsJsonFile,
