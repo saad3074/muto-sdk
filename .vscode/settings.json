@@ -1,0 +1,78 @@
+{
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.organizeImports.sortImports"],
+  "eslint.validate": ["typescript"],
+  // https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+  "better-comments.multilineComments": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight
+  "highlight.regexes": {},
+  // https://marketplace.visualstudio.com/items?itemName=dozerg.tsimportsorter
+  "tsImportSorter.configuration.groupRules": [
+    // https://github.com/daidodo/format-imports/wiki/Grouping-Rules#types-of-imports
+    { "flags": "scripts" },
+    [
+      {
+        "flags": "named",
+        "subGroups": ["^react$", "^next$", "^next/", "^@next/", "^next-", "^@\\w", "^\\w"]
+      }
+    ],
+    ["^@/"],
+    ["^\\.\\."],
+    ["^\\."]
+  ],
+  "tsImportSorter.configuration.keepUnused": [".*"],
+  "tsImportSorter.configuration.wrappingStyle": {
+    "maxNamesPerWrappedLine": 0,
+    "maxBindingNamesPerLine": 0,
+    "maxDefaultAndBindingNamesPerLine": 0
+  }
+}
